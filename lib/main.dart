@@ -8,6 +8,7 @@ import 'types_of_buttons.dart';
 import 'fitted__box.dart';
 import 'flexible_vs_expanded.dart';
 import 'floating_action_button.dart';
+import 'wrap_chip.dart';
 
 void main() {
   runApp(
@@ -25,6 +26,7 @@ void main() {
         'FloatingActionWidget': (context) => FloatingActionWidget(),
         'FlexibleWidget': (context) => FlexibleWidget(),
         'ListWheel': (context) => ListWheel(),
+        'WrapChip': (context) => WrapChip(),
       },
     ),
   );
@@ -46,7 +48,6 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
         ),
         body: ListView(
-          // padding: EdgeInsets.all(15.0),
           itemExtent: 87,
           children: [
             WidgetButton(
@@ -84,6 +85,10 @@ class MyApp extends StatelessWidget {
             WidgetButton(
               widgetName: 'ListWheel',
               route: 'ListWheel',
+            ),
+            WidgetButton(
+              widgetName: 'WrapChip',
+              route: 'WrapChip',
             ),
           ],
         ),
