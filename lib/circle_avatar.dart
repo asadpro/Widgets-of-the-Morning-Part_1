@@ -7,12 +7,14 @@ class CircleAvatarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('clipOval Screen'),
-      ),
-      body: Container(
-        color: Colors.green,
-      ),
-    );
+        appBar: AppBar(
+          title: Text('CircleAvatar Screen'),
+        ),
+        body: Center(
+          child: CircleAvatar(
+            radius: 180.0,
+            backgroundImage: AssetImage('recipes/7.jpg'),
+          ),
+        ));
   }
 }

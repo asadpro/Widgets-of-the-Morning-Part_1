@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:play_with_widgets_part_1/clip_oval.dart';
 import 'package:play_with_widgets_part_1/clipr_rect.dart';
-
+import 'package:play_with_widgets_part_1/listWheelScroll.dart';
 import 'animated_container.dart';
 import 'circle_avatar.dart';
 import 'types_of_buttons.dart';
@@ -24,6 +24,7 @@ void main() {
         'FittedBoxWidget': (context) => FittedBoxWidget(),
         'FloatingActionWidget': (context) => FloatingActionWidget(),
         'FlexibleWidget': (context) => FlexibleWidget(),
+        'ListWheel': (context) => ListWheel(),
       },
     ),
   );
@@ -79,6 +80,10 @@ class MyApp extends StatelessWidget {
             WidgetButton(
               widgetName: 'CircleAvatar',
               route: 'CircleAvatar',
+            ),
+            WidgetButton(
+              widgetName: 'ListWheel',
+              route: 'ListWheel',
             ),
           ],
         ),
