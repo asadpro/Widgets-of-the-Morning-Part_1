@@ -4,9 +4,9 @@ import 'package:play_with_widgets_part_1/clipr_rect.dart';
 
 import 'animated_container.dart';
 import 'circle_avatar.dart';
-import 'fade_in_image.dart';
+import 'types_of_buttons.dart';
 import 'fitted__box.dart';
-import 'flexible.dart';
+import 'flexible_vs_expanded.dart';
 import 'floating_action_button.dart';
 
 void main() {
@@ -20,7 +20,7 @@ void main() {
         'clipRRect': (context) => ClipRRectWidget(),
         'CircleAvatar': (context) => CircleAvatarWidget(),
         'AnimatedContainerWidget': (context) => AnimatedContainerWidget(),
-        'FadeInImageWidget': (context) => FadeInImageWidget(),
+        'Buttons': (context) => ButtonWidget(),
         'FittedBoxWidget': (context) => FittedBoxWidget(),
         'FloatingActionWidget': (context) => FloatingActionWidget(),
         'FlexibleWidget': (context) => FlexibleWidget(),
@@ -73,8 +73,8 @@ class MyApp extends StatelessWidget {
               route: 'AnimatedContainerWidget',
             ),
             WidgetButton(
-              widgetName: 'FadeInImage',
-              route: 'FadeInImageWidget',
+              widgetName: 'Buttons',
+              route: 'Buttons',
             ),
             WidgetButton(
               widgetName: 'CircleAvatar',

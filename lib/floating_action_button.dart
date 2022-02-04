@@ -8,11 +8,19 @@ class FloatingActionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('clipOval Screen'),
+        title: Text('FloatingActionButton floating through appBar'),
       ),
-      body: Container(
-        color: Colors.green,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
       ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 69,
+          color: Colors.purple,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

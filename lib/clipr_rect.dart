@@ -10,12 +10,11 @@ class ClipRRectWidget extends StatelessWidget {
       appBar: AppBar(
         title: Text('ClipRRect Screen'),
       ),
-      body: Container(
-        color: Colors.green,
-        child: Center(
-          child: ClipOval(
-            child: Image.asset('recipes/1.jpg'),
-          ),
+      body: Center(
+        child: ClipRRect(
+          borderRadius: BorderRadius.horizontal(
+              left: Radius.circular(52.0), right: Radius.circular(52.0)),
+          child: Image.asset('recipes/1.jpg'),
         ),
       ),
     );
