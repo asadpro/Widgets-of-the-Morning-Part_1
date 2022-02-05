@@ -90,10 +90,6 @@ class MyApp extends StatelessWidget {
               widgetName: 'WrapChip',
               route: 'WrapChip',
             ),
-            WidgetButton(
-              widgetName: 'WrapChip',
-              route: 'WrapChip',
-            ),
           ],
         ),
       ),
