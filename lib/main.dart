@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'List of Widgets',
+            'Top widget of the week',
             style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
