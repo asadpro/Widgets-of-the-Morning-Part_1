@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:play_with_widgets_part_1/clip_oval.dart';
 import 'package:play_with_widgets_part_1/clipr_rect.dart';
-import 'package:play_with_widgets_part_1/listWheelScroll.dart';
+import 'package:play_with_widgets_part_1/list_wheel_scroll.dart';
 import 'animated_container.dart';
 import 'circle_avatar.dart';
 import 'types_of_buttons.dart';
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
         ),
         body: ListView(
           itemExtent: 87,
-          children: [
+          children: const [
             WidgetButton(
               widgetName: 'clipOval',
               route: 'clipOval',
@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
 }
 
 class WidgetButton extends StatelessWidget {
-  WidgetButton({Key? key, required this.widgetName, required this.route})
+  const WidgetButton({Key? key, required this.widgetName, required this.route})
       : super(key: key);
   final String widgetName;
   final String route;
