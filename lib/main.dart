@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:play_with_widgets_part_1/clip_oval.dart';
 import 'package:play_with_widgets_part_1/clipr_rect.dart';
 import 'package:play_with_widgets_part_1/list_wheel_scroll.dart';
+import 'package:play_with_widgets_part_1/textfield.dart';
 import 'animated_container.dart';
 import 'circle_avatar.dart';
 import 'types_of_buttons.dart';
@@ -27,6 +28,7 @@ void main() {
         'FlexibleWidget': (context) => FlexibleWidget(),
         'ListWheel': (context) => ListWheel(),
         'WrapChip': (context) => WrapChip(),
+        'TextField': (context) => TextFieldWidget(),
       },
     ),
   );
@@ -54,7 +56,6 @@ class MyApp extends StatelessWidget {
               widgetName: 'clipOval',
               route: 'clipOval',
             ),
-            //practicing pull request graphically
             WidgetButton(
               widgetName: 'ClipRRect',
               route: 'clipRRect',
@@ -90,6 +91,10 @@ class MyApp extends StatelessWidget {
             WidgetButton(
               widgetName: 'WrapChip',
               route: 'WrapChip',
+            ),
+            WidgetButton(
+              widgetName: 'TextField',
+              route: 'TextField',
             ),
           ],
         ),
